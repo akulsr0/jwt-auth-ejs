@@ -54,8 +54,23 @@ app.post('/', async (req, res) => {
   }
 });
 
+app.get('/dashboard', async (req, res) => {
+  const tokenCookie = req.headers.cookie;
+  if (tokenCookie != undefined) {
+    const token = tokenCookie.split('=')[1];
+    const decoded = jwt.verify(token, config.get('JWT_SECRET'));
+    const user = await User.findById(decoded.id);
+    res.render('dashboard', { name: user.name });
+  }
+  res.redirect('/');
+});
+
 // Register User (GET)
 app.get('/register', (req, res) => {
+  const tokenCookie = req.headers.cookie;
+  if (tokenCookie != undefined) {
+    res.redirect('/');
+  }
   res.render('register');
 });
 
