@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>JWT Auth</title>
+    <style>
+      .loginbox {
+        margin-top: 20vh;
+        background-color: #444;
+        padding-top: 4px;
+      }
+      input {
+        width: 80%;
+        height: 40px;
+        padding-left: 10px;
+        border: 2px solid #eaf0f1;
+        font-size: 14px;
+      }
+      input:nth-last-child(odd) {
+        margin-top: 4px;
+      }
+      .loginbutton {
+        width: 80%;
+        height: 40px;
+        background-color: #333;
+        border: none;
+        margin-top: 6px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      h2 {
+        color: #fff;
+        font-family: sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body bgcolor="#333">
+    <div class="loginbox">
+      <center>
+        <h2>User Login</h2>
+        <form method="POST" action="/">
+          <input placeholder="Email" type="email" name="email" /><br />
+          <input placeholder="Password" type="password" name="password" /><br />
+          <button class="loginbutton">Login</button>
+        </form>
+        <br />
+        <a href="/register">New User? Register</a> <br />
+        <br />
+      </center>
+    </div>
+  </body>
+</html>

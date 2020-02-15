@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>JWT Auth</title>
+    <style>
+      .dashboardbox {
+        margin-top: 20vh;
+        background-color: #444;
+        padding-top: 4px;
+      }
+      h2 {
+        color: #fff;
+        font-family: sans-serif;
+      }
+      ul {
+        background-color: #333;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+      }
+      ul li {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+      }
+      .logout{
+        background-color: #333;
+        padding: 8px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: none;
+        margin-bottom: 10px;
+        color: #fff;
+        font-weight: 900;
+        font-size: 12px;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body bgcolor="#333">
+    <div class="dashboardbox">
+      <center>
+        <h2>Profile</h2>
+        <ul>
+          <li>Name: <%= name %></li>
+        </ul>
+        <br />
+        <form method="POST" action="/logout">
+          <button class="logout">Logout</strong>
+        </form>
+      </center>
+    </div>
+  </body>
+</html>

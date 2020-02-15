@@ -1,0 +1,4 @@
+{
+    "DB_URL": "mongodb://localhost:27017/jwt-auth",
+    "JWT_SECRET": "mysecretkey"
+}
