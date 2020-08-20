@@ -9,7 +9,7 @@
   "author": "Akul Srivastava",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^3.0.8",
+    "bcrypt": "^5.0.0",
     "config": "^3.2.5",
     "cors": "^2.8.5",
     "ejs": "^3.0.1",
